@@ -4,15 +4,14 @@ Simple Pinecone Query Script
 Uses the same Turkish E5 model to embed queries and search the uploaded index
 """
 
+import os
 import torch
 import numpy as np
 from transformers import AutoTokenizer, AutoModel
 from pinecone.grpc import PineconeGRPC
 
 # Configuration - should match your upload script
-PINECONE_API_KEY = (
-    "pcsk_2NGq96_NARfGCd71uFJWBZQNZGmYwC8Spj6ctn6tyeurzhadCCodtgmZNaaEhXb53rAu44"
-)
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_INDEX_NAME = "ytu-ce-cosmos-turkish-e5-large-embeddings"
 MODEL_ID = "ytu-ce-cosmos/turkish-e5-large"
 PREFIX = "query: "  # Note: different prefix for queries (query: vs passage:)

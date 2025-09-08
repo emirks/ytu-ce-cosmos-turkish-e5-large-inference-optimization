@@ -25,9 +25,7 @@ from pinecone.grpc import PineconeGRPC  # For better performance
 # Configuration
 class Config:
     # Pinecone settings - Hardcoded values
-    PINECONE_API_KEY = (
-        "pcsk_2NGq96_NARfGCd71uFJWBZQNZGmYwC8Spj6ctn6tyeurzhadCCodtgmZNaaEhXb53rAu44"
-    )
+    PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
     PINECONE_INDEX_NAME = "ytu-ce-cosmos-turkish-e5-large-embeddings"
     PINECONE_ENVIRONMENT = "europe-west4"
     PINECONE_CLOUD = "gcp"
