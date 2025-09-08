@@ -1,0 +1,13 @@
+# Pinecone Configuration
+# Get your API key from: https://app.pinecone.io/
+PINECONE_API_KEY=pcsk_2NGq96_NARfGCd71uFJWBZQNZGmYwC8Spj6ctn6tyeurzhadCCodtgmZNaaEhXb53rAu44
+
+# Index configuration - Updated to match your created index
+PINECONE_INDEX_NAME=ytu-ce-cosmos-turkish-e5-large-embeddings
+PINECONE_ENVIRONMENT=europe-west4
+PINECONE_CLOUD=gcp
+
+# Optional: Custom file paths (if not using auto-detection)
+# EMBEDDINGS_PATH=path/to/embeddings_2m_3m.fp16.npy
+# PARQUET_PATH=path/to/chunks_2m_3m.parquet  
+# META_PATH=path/to/meta_2m_3m.json 
