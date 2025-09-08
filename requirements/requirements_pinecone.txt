@@ -1,0 +1,14 @@
+# Pinecone Upload Requirements
+# Core dependencies
+pinecone[grpc]>=4.0.0       # Pinecone client with gRPC for better performance
+numpy>=1.21.0               # For handling embeddings arrays
+pandas>=1.5.0               # For parquet data manipulation
+pyarrow>=10.0.0             # For efficient parquet file reading
+tqdm>=4.64.0                # Progress bars
+
+# Optional for query testing
+transformers>=4.21.0        # If you want to generate query embeddings
+torch>=1.12.0               # PyTorch for Turkish E5 model
+
+# Environment management
+python-dotenv>=0.19.0       # For loading environment variables from .env file 
