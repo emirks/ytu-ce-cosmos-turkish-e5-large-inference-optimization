@@ -1,0 +1,12 @@
+{
+  "model": "ytu-ce-cosmos/turkish-e5-large",
+  "input_file": "head_content.jsonl",
+  "count": 100000,
+  "min": 2,
+  "max": 46497,
+  "mean": 774.99766,
+  "p50": 340.0,
+  "p90": 1847.0,
+  "p95": 2550.0,
+  "p99": 4802.039999999979
+}
