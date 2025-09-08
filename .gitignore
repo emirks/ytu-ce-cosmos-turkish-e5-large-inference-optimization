@@ -1,0 +1,8 @@
+*.pyc
+*.parquet
+
+.env
+*.json
+*.jsonl
+
+/rag-playground/
